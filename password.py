@@ -8,7 +8,7 @@ if surname.isalpha():
 	print("Hello, Dear", name, surname, "my sait is welcome to you")
 else:
 	print("Your surname is incorrect. Please enter your surname correct")
-age = (input("How old are you? "))
+age = input("How old are you? ")
 if age.isdigit():
 	if int(age) > 0:
 		pass
@@ -20,7 +20,5 @@ if "@" in mail and "." in mail:
 else:
 	print("Your mail is incorrect. Please enter your mail correct")
 password = input("Enter your password.In password must be [a-z], [A-Z] and [0-9] and 8 characters     ")
-if len(password) == 8 and password.isalnum() and password.isalpha() and password.isdigit():
-	pass
-else:
-	print("Error")
+if len(password) >= 8 and len(password) <= 12 and password.isalnum():
+	print("print")
